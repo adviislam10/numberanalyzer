@@ -19,16 +19,33 @@ function analyzeNumber() {
 
 // Analyze Functions
 
-function getSign(pos, neg, zero) {
-        let number = numInput;
+function getSign(num) {
 
-        if (number > 0) {
-            return pos;
-        } else if (number < 0) {
-            return neg;
-        } else {
-            return zero
-        }
-        
+    if (num > 0) {
+        return 'pos';
+    } else if (num < 0) {
+        return 'neg';
+    } else {
+        return 'zero';
     }
-    
+}
+
+function evenOrOdd(num) {
+
+    if (num % 2 == 0) {
+        return 'even'
+    } else {
+        return 'odd'
+    }
+
+}
+
+function multipleOf10(num) {
+
+    if (num % 10 == 0) {
+        return 'Yes'
+    } else {
+        return 'No'
+    }
+
+}
