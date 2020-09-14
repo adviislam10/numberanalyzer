@@ -43,9 +43,9 @@ function evenOrOdd(num) {
 function multipleOf10(num) {
 
     if (num % 10 == 0) {
-        return 'Yes'
+        return true
     } else {
-        return 'No'
+        return false
     }
 
 }
